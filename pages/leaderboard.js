@@ -1,23 +1,27 @@
 import React from 'react';
-import Header from "../components/header/Header";
+import Table from "../components/ui/Table";
 
 const Leaderboard = () => {
     return (
         <div>
-            <Header/>
             <div className="px-12 mt-8">
-                <h1 className="text-4xl">Leaderboard</h1>
-                <table>
-                    <thead>
-                        <tr>
-                           <th>No</th>
-                           <th>User</th>
-                           <th>Edits</th>
-                        </tr>
-                    </thead>
-                </table>
+                <h1 className="text-4xl mt-8 ml-40">Leaderboard <i className="fas fa-trophy text-yellow-500"/></h1>
+                <p className="text-xl mt-2 ml-40">Our top toolhub editors of the day</p>
+                <div className="flex justify-center">
+                    <div
+                        className="not-prose relative bg-slate-50 mt-8 mb-8 rounded-lg w-9/12 overflow-hidden dark:bg-slate-500/25">
+                        <div style={{backgroundPosition: "10px 10px"}}
+                             className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25 dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"></div>
+                        <div className="relative rounded-xl overflow-auto">
+                            <div className="shadow-sm overflow-hidden my-8">
+                                <Table/>
+                            </div>
+                        </div>
+                        <div
+                            className="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5"/>
+                    </div>
+                </div>
             </div>
-
         </div>
     );
 };

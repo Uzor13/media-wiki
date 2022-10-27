@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, .logo {
+h1, h2, h3, h4, .logo, thead, .span {
     font-family: 'Catamaran', sans-serif;
 }
 
-p, span, button, li, td, a {
+p, span, button, li, td, a, ::placeholder {
     font-family: 'Poppins', sans-serif;
+}
+
+.layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 100% 80px;
 }

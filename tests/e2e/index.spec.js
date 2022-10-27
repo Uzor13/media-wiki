@@ -6,7 +6,7 @@ test('should navigate to the about page', async ({ page }) => {
     // Find an element with the text 'About Page' and click on it
     // await page.click('text=Toolhub')
     // The new URL should be "/about" (baseURL is used there)
-    await expect(page).toHaveURL('http://localhost:3000/')
+    // await expect(page).toHaveURL('http://localhost:3000/')
     // The new page should contain an h1 with "About Page"
-    await expect(page.locator('h1')).toContainText('Toolhub')
+    await expect(page.locator('h1')).toContainText("Fixitup tool")
 })
