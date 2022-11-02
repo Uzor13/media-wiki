@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Logo = () => {
     return (
-        <h1 className="text-3xl">
-            <Link href="/" className="logo">Toolhub Records Management</Link>
+        <h1 className="sm:text-3xl text-lg">
+            <Link href="/" className="logo">Toolhub Records</Link>
         </h1>
     );
 };

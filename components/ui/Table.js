@@ -1,104 +1,66 @@
 import React from 'react';
+import TableDefinition from "./TableDefinition";
 
 const Table = () => {
     return (
         <table className="border-collapse table-auto w-full h-full text-sm">
             <thead>
             <tr>
-                <th className="border-b border-slate-600 font-medium text-lg p-4 pl-8 pt-0 pb-3 text-gray-600 text-left">No.</th>
+                <th className="border-b border-slate-600 font-medium text-lg p-4 md:pl-8 pt-0 pb-3 text-gray-600 text-left">No.</th>
                 <th className="border-b border-slate-600 font-medium text-lg p-4 pt-0 pb-3 text-gray-600 text-left">User</th>
-                <th className="border-b border-slate-600 font-medium text-lg p-4 pr-8 pt-0 pb-3 text-gray-600 text-left">Edits</th>
+                <th className="border-b border-slate-600 font-medium text-lg p-4 md:pr-8 pt-0 pb-3 text-gray-600 text-left">Edits</th>
             </tr>
             </thead>
-            <tbody className="bg-slate-800">
+            <tbody className="bg-blue-500">
             <tr>
-                <td className="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-300">
-                    1
-                </td>
-                <td className="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-300">Malcolm
-                    Lockyer
-                </td>
-                <td className="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-300">1961</td>
+                <TableDefinition>1</TableDefinition>
+                <TableDefinition>Malcolm Lockyer</TableDefinition>
+                <TableDefinition>1961</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-300">
-                    2
-                </td>
-                <td className="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-300">The
-                    Eagles
-                </td>
-                <td className="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-300">1972</td>
+                <TableDefinition>2</TableDefinition>
+                <TableDefinition>The Eagles</TableDefinition>
+                <TableDefinition>1972</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    3
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    Wind
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">1975</td>
+                <TableDefinition>3</TableDefinition>
+                <TableDefinition>Wind</TableDefinition>
+                <TableDefinition>1975</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    4
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">Earth
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">1809</td>
+                <TableDefinition>4</TableDefinition>
+                <TableDefinition>Earth</TableDefinition>
+                <TableDefinition>1809</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    5
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    Air24
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">270</td>
+                <TableDefinition>5</TableDefinition>
+                <TableDefinition>Air24</TableDefinition>
+                <TableDefinition>270</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    6
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    rift33
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">424</td>
+                <TableDefinition>6</TableDefinition>
+                <TableDefinition>rift33</TableDefinition>
+                <TableDefinition>424</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    7
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    giddy
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">983</td>
+                <TableDefinition>7</TableDefinition>
+                <TableDefinition>giddy</TableDefinition>
+                <TableDefinition>983</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    8
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    bandito
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">878</td>
+                <TableDefinition>8</TableDefinition>
+                <TableDefinition>bandito</TableDefinition>
+                <TableDefinition>878</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    9
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    joker
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">139</td>
+                <TableDefinition>9</TableDefinition>
+                <TableDefinition>joker</TableDefinition>
+                <TableDefinition>139</TableDefinition>
             </tr>
             <tr>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-300">
-                    10
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-300">
-                    21pilots
-                </td>
-                <td className="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-300">444</td>
+                <TableDefinition>10</TableDefinition>
+                <TableDefinition>21pilots</TableDefinition>
+                <TableDefinition>444</TableDefinition>
             </tr>
             </tbody>
         </table>

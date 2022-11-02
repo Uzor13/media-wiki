@@ -1,3 +1,5 @@
+## Toolhub Record Management
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -10,25 +12,16 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://media-wiki.vercel.app/](https://media-wiki.vercel.app/) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result if you have the code on your local.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Thought Process
+- I wanted an app that was simple to use, not crowded and with a nice user experience.
+- Using citation hunt as an inspiration, I designed a basic view of the home page whilst adding a bit of color to keep the user's attention on the page.
+- Added a search box to help users who already have a tool in mind to easily find the tool.
+- Added a logo for personalisation and two button of different colors, one to edit the tool and the other to skip the current tool if not interested.
+- Added an edit number count for the user to keep track of the number of edits done and also spark interest in using it as an inspiration in entering the leaderboard.
+- Made the leaderboard page a bit playful to spark friendly competition and keeping it free by making the leaderboard a top ten of the day.
+- I used information from the backend challenge to have an idea of how to present the data for the dashboard, using charts to add visuals and also having it in the number format.
+- The colors chosen were non-flashy colors to avoid distraction.

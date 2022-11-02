@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Hero from "../components/body/Hero";
+import Input from "../components/ui/Input";
+import Button from "../components/ui/Button";
+import Tool from "../components/tools/Tool";
 
 export default function Home() {
     return (
@@ -12,16 +15,11 @@ export default function Home() {
             </Head>
             <Hero/>
             <div className="flex flex-col gap-3 justify-center items-center mt-12">
-                <input type="search" className="border border-gray-400 rounded-md mt-4 mb-4 pl-3 w-1/2 h-12" placeholder="Search for a tool"/>
-                <div className="w-5/12 text-center">
-                    <i className="fas fa-tools text-blue-700 text-6xl"/>
-                    <h1 className="mt-4 mb-4 text-3xl">Fixitup tool</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, deserunt eos? Ab alias ducimus et
-                        minus quae? Eius facere harum incidunt molestias, nesciunt </p>
-                </div>
+                <Input/>
+                <Tool/>
                 <div className="flex gap-6 mt-4">
-                    <button type="button" className="w-44 rounded-sm hover:bg-blue-700 hover:shadow-md h-12 bg-blue-600 text-white">Let's Edit!</button>
-                    <button type="button" className="w-44 rounded-sm hover:bg-red-700 hover:shadow-md h-12 bg-red-600 text-white">Try something else</button>
+                    <Button type="button" classes="w-44 rounded-sm hover:bg-blue-600 hover:shadow-md h-12 bg-blue-500 text-white">Let's Edit!</Button>
+                    <Button type="button" classes="w-44 rounded-sm hover:bg-red-700 hover:shadow-md h-12 bg-red-600 text-white">Skip Tool</Button>
                 </div>
                 <p className="text-gray-400 mt-3">Number of edits today: 0</p>
             </div>
