@@ -1,12 +1,26 @@
-import { test, expect } from '@playwright/test'
+// @ts-check
+const { test, expect } = require('@playwright/test');
 
-test('should navigate to the about page', async ({ page }) => {
-    // Start from the index page (the baseURL is set via the webServer in the playwright.config.ts)
-    await page.goto('http://localhost:3000/')
-    // Find an element with the text 'About Page' and click on it
-    // await page.click('text=Toolhub')
-    // The new URL should be "/about" (baseURL is used there)
-    // await expect(page).toHaveURL('http://localhost:3000/')
-    // The new page should contain an h1 with "About Page"
-    await expect(page.locator('h1')).toContainText("Fixitup tool")
-})
+test('homepage has Toolhub in title and leaderboard link linking to the leaderboard page', async ({ page }) => {
+    await page.goto('http://localhost:3000/');
+
+    // Expect a title "to contain" a substring.
+    await expect(page).toHaveTitle(/Toolhub/);
+
+    await expect(page.getByPlaceholder('Search for a tool')).toBeVisible();
+    await expect(page.getByPlaceholder('Search for a tool')).toBeEmpty();
+
+    // create a locator
+    const leaderboard = page.getByText('leaderboard');
+
+    // Expect an attribute "to be strictly equal" to the value.
+    await expect(leaderboard).toHaveAttribute('href', '/leaderboard');
+
+    // Click the get started link.
+    await leaderboard.click();
+
+    await page.getByPlaceholder('Search for a tool');
+
+    // Expects the URL to contain intro.
+    await expect(page).toHaveURL(/.*leaderboard/);
+});
